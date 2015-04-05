@@ -55,7 +55,6 @@ namespace CrossWeather
                         wind.Text = "Wind Speed: " + weatherData.wind.speed;
                         button.Text = "Get Weather";
                         await image.RotateTo(weatherData.wind.deg, 800, Easing.CubicInOut);
-
                     }
                 }
                 else
