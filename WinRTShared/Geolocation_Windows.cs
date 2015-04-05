@@ -17,6 +17,9 @@ namespace WinRTShared
         {
 
         }
+
+
+
         public async Task<Tuple<double,double>> getCurrentPosition()
         {
             Geolocator geolocator = new Geolocator();

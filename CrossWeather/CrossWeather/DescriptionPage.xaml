@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CrossWeather.DescriptionPage">
   		<StackLayout x:Name ="stack">
-		  <Button x:Name = "geoButton" Text = "Get location"></Button>
-		  <Label x:Name = "city" Text = "jora"></Label>
-		  <Label x:Name = "overallWeather" Text = "jora"></Label>
-		  <Label x:Name = "wind" Text = "jora"></Label>
-		  <Label x:Name = "longitude" Text = "jora"></Label>
-		  <Label x:Name = "latitude" Text = "jora"></Label>
-		  <Image x:Name = "image" Source = "arrow.png" ></Image>
+		  <Button x:Name = "geoButton" Text = "Get location"/>
+		  <Label x:Name = "city" FontSize = "35" />
+		  <Label x:Name = "overallWeather" FontSize = "35" />
+		  <Label x:Name = "wind" FontSize = "35" />
+		  <Label x:Name = "longitude" FontSize = "35" />
+		  <Label x:Name = "latitude" FontSize = "35" />
+		  <Image x:Name = "image" Source = "arrow.png" WidthRequest = "100" HeightRequest = "100" />
   		</StackLayout>
 	  
 </ContentPage>

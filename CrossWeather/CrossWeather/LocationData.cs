@@ -5,76 +5,58 @@ namespace CrossWeather
 
     public class LocationData
     {
-        public Result[] results { get; set; }
-        public string status { get; set; }
+        public string authenticationResultCode { get; set; }
+        public string brandLogoUri { get; set; }
+        public string copyright { get; set; }
+        public Resourceset[] resourceSets { get; set; }
+        public int statusCode { get; set; }
+        public string statusDescription { get; set; }
+        public string traceId { get; set; }
     }
 
-    public class Result
+    public class Resourceset
     {
-        public Address_Components[] address_components { get; set; }
-        public string formatted_address { get; set; }
-        public Geometry geometry { get; set; }
-        public string place_id { get; set; }
-        public string[] types { get; set; }
+        public int estimatedTotal { get; set; }
+        public Resource[] resources { get; set; }
     }
 
-    public class Geometry
+    public class Resource
     {
-        public Location location { get; set; }
-        public string location_type { get; set; }
-        public Viewport viewport { get; set; }
-        public Bounds bounds { get; set; }
+        public string __type { get; set; }
+        public float[] bbox { get; set; }
+        public string name { get; set; }
+        public Point point { get; set; }
+        public Address address { get; set; }
+        public string confidence { get; set; }
+        public string entityType { get; set; }
+        public Geocodepoint[] geocodePoints { get; set; }
+        public string[] matchCodes { get; set; }
     }
 
-    public class Location
+    public class Point
     {
-        public float lat { get; set; }
-        public float lng { get; set; }
+        public string type { get; set; }
+        public float[] coordinates { get; set; }
     }
 
-    public class Viewport
+    public class Address
     {
-        public Northeast northeast { get; set; }
-        public Southwest southwest { get; set; }
+        public string addressLine { get; set; }
+        public string adminDistrict { get; set; }
+        public string adminDistrict2 { get; set; }
+        public string countryRegion { get; set; }
+        public string formattedAddress { get; set; }
+        public string locality { get; set; }
+        public string postalCode { get; set; }
     }
 
-    public class Northeast
+    public class Geocodepoint
     {
-        public float lat { get; set; }
-        public float lng { get; set; }
+        public string type { get; set; }
+        public float[] coordinates { get; set; }
+        public string calculationMethod { get; set; }
+        public string[] usageTypes { get; set; }
     }
-
-    public class Southwest
-    {
-        public float lat { get; set; }
-        public float lng { get; set; }
-    }
-
-    public class Bounds
-    {
-        public Northeast1 northeast { get; set; }
-        public Southwest1 southwest { get; set; }
-    }
-
-    public class Northeast1
-    {
-        public float lat { get; set; }
-        public float lng { get; set; }
-    }
-
-    public class Southwest1
-    {
-        public float lat { get; set; }
-        public float lng { get; set; }
-    }
-
-    public class Address_Components
-    {
-        public string long_name { get; set; }
-        public string short_name { get; set; }
-        public string[] types { get; set; }
-    }
-
 
 }
 
