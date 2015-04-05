@@ -151,6 +151,12 @@
       <HintPath>..\packages\Xamarin.Forms.Windows.1.4.2.6353-pre2\lib\win81\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CrossWeather\CrossWeather\CrossWeather.csproj">
+      <Project>{74734b63-cb3d-47b6-8e80-86557a7ca657}</Project>
+      <Name>CrossWeather</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

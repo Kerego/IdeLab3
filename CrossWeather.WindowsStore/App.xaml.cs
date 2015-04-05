@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
 namespace CrossWeather.WindowsStore
-{
+{   
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
@@ -61,6 +61,9 @@ namespace CrossWeather.WindowsStore
                 rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+
+                //Initialize Xamarin Forms
+                Xamarin.Forms.Forms.Init(e); 
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
