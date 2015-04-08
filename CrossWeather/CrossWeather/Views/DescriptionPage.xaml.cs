@@ -19,7 +19,6 @@ namespace CrossWeather
         {
             BindingContext = settings;
             InitializeComponent();
-            settings.useGeoLocation = true;
             Title = "Description";
 
             stack.Padding = new Thickness(20, 20, 20, 20);
@@ -60,6 +59,7 @@ namespace CrossWeather
         async Task getLocation()
         {
             geoButton.Text = "Fetching...";
+            settings.useGeoLocation = false;
 
             location = await geolocation.getCurrentPosition();
 
@@ -100,6 +100,8 @@ namespace CrossWeather
             }
             else
                 city.Text = "Connection Error";
+
+            settings.useGeoLocation = true;
         }
     }
 }
