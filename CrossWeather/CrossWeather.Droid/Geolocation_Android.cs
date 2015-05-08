@@ -14,7 +14,7 @@ using CrossWeather.Droid;
 using Android.Locations;
 using Xamarin.Forms;
 
-[assembly: Xamarin.Forms.Dependency(typeof(Geolocation_Android))]
+[assembly: Dependency(typeof(Geolocation_Android))]
 namespace CrossWeather.Droid
 {
     class Geolocation_Android : Java.Lang.Object, ILocationListener, IGeolocation
@@ -26,39 +26,27 @@ namespace CrossWeather.Droid
 
         }
 
-        public async Task<Tuple<double,double>> getCurrentPosition()
-        {
-
-            var wrapper = new Android.Content.ContextWrapper(Forms.Context);
-
-            locationManager = (LocationManager)wrapper.GetSystemService(Context.LocationService);
-            Criteria criteriaForLocationService = new Criteria
-            {
-                Accuracy = Accuracy.Fine
-            };
-            IList<string> acceptableLocationProviders = locationManager.GetProviders(criteriaForLocationService, true);
-
-            if (acceptableLocationProviders.Any())
-            {
-                locationProvider = acceptableLocationProviders.First();
-                locationManager.RequestLocationUpdates(locationProvider, 300, 10, this);
-
-            }
-            else
-            {
-                locationProvider = String.Empty;
-            }
-
-
-            currentLocation = locationManager.GetLastKnownLocation(locationProvider);
-
-            if (currentLocation != null)
-            {
-                position = new Tuple<double, double>(currentLocation.Latitude, currentLocation.Longitude);
-            }
-
-            return position;
-        }
+        async Task<Tuple<double, double>> IGeolocation.getCurrentPosition ()
+		{
+			var wrapper = new Android.Content.ContextWrapper (Forms.Context);
+			locationManager = (LocationManager)wrapper.GetSystemService (Context.LocationService);
+			var criteriaForLocationService = new Criteria {
+				Accuracy = Accuracy.Fine
+			};
+			IList<string> acceptableLocationProviders = locationManager.GetProviders (criteriaForLocationService, true);
+			if (acceptableLocationProviders.Any ()) {
+				locationProvider = acceptableLocationProviders.First ();
+				locationManager.RequestLocationUpdates (locationProvider, 300, 10, this);
+			}
+			else {
+				locationProvider = String.Empty;
+			}
+			currentLocation = locationManager.GetLastKnownLocation (locationProvider);
+			if (currentLocation != null) {
+				position = new Tuple<double, double> (currentLocation.Latitude, currentLocation.Longitude);
+			}
+			return position;
+		}
 
 
         Android.Locations.Location currentLocation;

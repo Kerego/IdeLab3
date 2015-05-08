@@ -1,9 +1,13 @@
-﻿<Properties StartupItem="CrossWeather\CrossWeather.Droid\CrossWeather.Droid.csproj">
+﻿<Properties StartupItem="CrossWeather\CrossWeather.Droid\CrossWeather.Droid.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CrossWeather\CrossWeather\Views\DescriptionPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CrossWeather\CrossWeather\Views\SettingsPage.xaml">
     <Files>
-      <File FileName="CrossWeather\CrossWeather\Views\DescriptionPage.xaml" Line="11" Column="5" />
-      <File FileName="CrossWeather\CrossWeather\ViewModels\Settings.cs" Line="1" Column="1" />
+      <File FileName="CrossWeather\CrossWeather.Droid\app.config" Line="9" Column="8" />
+      <File FileName="CrossWeather\CrossWeather\ViewModels\CommonINotify.cs" Line="1" Column="1" />
+      <File FileName="CrossWeather\CrossWeather\ViewModels\IGeolocation.cs" Line="1" Column="1" />
+      <File FileName="CrossWeather\CrossWeather\ViewModels\Settings.cs" Line="17" Column="3" />
+      <File FileName="CrossWeather\CrossWeather\Views\SettingsPage.xaml" Line="22" Column="15" />
+      <File FileName="CrossWeather\CrossWeather\Views\SettingsPage.xaml.cs" Line="9" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

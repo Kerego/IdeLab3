@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CrossWeather
+﻿namespace CrossWeather
 {
     public class LocationData
     {

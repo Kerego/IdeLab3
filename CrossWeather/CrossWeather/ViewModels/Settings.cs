@@ -1,15 +1,8 @@
-﻿using CrossWeather.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CrossWeather
+﻿namespace CrossWeather
 {
     class Settings : CommonINotify
     {
-
+		
         private bool _useGeoLocation;
 
         public bool useGeoLocation
@@ -21,10 +14,6 @@ namespace CrossWeather
                 OnPropertyChanged("useGeoLocation");
             }
         }
-
-
-        
-        
 
         public Settings()
         {

@@ -9,6 +9,5 @@
 		    <Label x:Name = "wind" FontSize = "35" />
 		    <Label x:Name = "longitude" FontSize = "35" />
 		    <Label x:Name = "latitude" FontSize = "35" IsEnabled = "{Binding useGeoLocation}"/>
-		    <Image x:Name = "image" Source = "arrow.png" WidthRequest = "100" HeightRequest = "100" />
   		</StackLayout>
 </ContentPage>
