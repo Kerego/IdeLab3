@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrossWeather.SettingsPage"
+             Title = "Settings">
+
+    	 	<Grid x:Name = "grid">
+
+	         	<Grid.RowDefinitions>
+					<RowDefinition Height="Auto" /> 
+					<RowDefinition Height="Auto" /> 
+					<RowDefinition Height="Auto" /> 
+					<RowDefinition Height="Auto" /> 
+				</Grid.RowDefinitions>  
+
+				<Grid.ColumnDefinitions>     
+					<ColumnDefinition Width="3*" />     
+					<ColumnDefinition Width="*" /> 	    
+				</Grid.ColumnDefinitions>
+				<Label Text = "Select Default Location" FontSize="24" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row = "0" Grid.ColumnSpan = "2"/>
+				<Entry x:Name = "CityData" Grid.Row="1" Grid.Column = "0" />
+				<Button x:Name = "GPSButton" Text = "Auto" Grid.Row = "1" Grid.Column = "1" BackgroundColor = "Teal" TextColor="White"/>
+				<Button x:Name = "SaveButton" Text = "Save" Grid.Row = "2" Grid.ColumnSpan = "2" HorizontalOptions="Center" />
+				<Label Text = "Copyright 2015 © Bejenari Marian" Grid.Row = "4" Grid.ColumnSpan = "2" HorizontalOptions="Center"/> 
+         	</Grid>
+</ContentPage>

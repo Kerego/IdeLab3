@@ -127,6 +127,24 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Icon01d.png" />
+    <Content Include="Assets\Icon01n.png" />
+    <Content Include="Assets\Icon02d.png" />
+    <Content Include="Assets\Icon02n.png" />
+    <Content Include="Assets\Icon03d.png" />
+    <Content Include="Assets\Icon03n.png" />
+    <Content Include="Assets\Icon04d.png" />
+    <Content Include="Assets\Icon04n.png" />
+    <Content Include="Assets\Icon09d.png" />
+    <Content Include="Assets\Icon09n.png" />
+    <Content Include="Assets\Icon10d.png" />
+    <Content Include="Assets\Icon10n.png" />
+    <Content Include="Assets\Icon11d.png" />
+    <Content Include="Assets\Icon11n.png" />
+    <Content Include="Assets\Icon13d.png" />
+    <Content Include="Assets\Icon13n.png" />
+    <Content Include="Assets\Icon50d.png" />
+    <Content Include="Assets\Icon50n.png" />
     <Content Include="Properties\_SettingsStarted.txt" />
   </ItemGroup>
   <ItemGroup>

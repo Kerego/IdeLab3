@@ -1,44 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-
-  <Identity Name="2baada99-9c05-4e43-8202-49432f3f58e1"
-            Publisher="CN=Nillan"
-            Version="1.0.0.0" />
-
-  <mp:PhoneIdentity PhoneProductId="2baada99-9c05-4e43-8202-49432f3f58e1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
-
+  <Identity Name="43002Kerego.CrossWeather" Publisher="CN=0B25ABF1-EAF5-41BB-9856-EA4065EE129D" Version="1.1.0.3" />
+  <mp:PhoneIdentity PhoneProductId="ad6e0261-17df-44e4-9de5-e13cdd3db891" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>CrossWeather.WindowsPhone</DisplayName>
-    <PublisherDisplayName>Nillan</PublisherDisplayName>
+    <DisplayName>CrossWeather</DisplayName>
+    <PublisherDisplayName>Kerego</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
     <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
   </Prerequisites>
-  
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application Id="App"
-        Executable="$targetnametoken$.exe"
-        EntryPoint="CrossWeather.WindowsPhone.App">
-        <m3:VisualElements
-            DisplayName="CrossWeather.WindowsPhone"
-            Square150x150Logo="Assets\Logo.png"
-            Square44x44Logo="Assets\SmallLogo.png"
-            Description="CrossWeather.WindowsPhone"
-            ForegroundText="light"
-            BackgroundColor="transparent">
-            <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"/>
-            <m3:SplashScreen Image="Assets\SplashScreen.png"/>
-        </m3:VisualElements>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="CrossWeather.WindowsPhone.App">
+      <m3:VisualElements DisplayName="CrossWeather" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="CrossWeather.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
+        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+        <m3:InitialRotationPreference>
+          <m3:Rotation Preference="portrait" />
+        </m3:InitialRotationPreference>
+      </m3:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>
