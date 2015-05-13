@@ -1,13 +1,16 @@
 ﻿<Properties StartupItem="CrossWeather\CrossWeather.Droid\CrossWeather.Droid.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CrossWeather\CrossWeather\Views\SettingsPage.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.AVD_GalaxyNexus_ToolsForApacheCordova" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets">
     <Files>
-      <File FileName="CrossWeather\CrossWeather.Droid\app.config" Line="9" Column="8" />
-      <File FileName="CrossWeather\CrossWeather\ViewModels\CommonINotify.cs" Line="1" Column="1" />
-      <File FileName="CrossWeather\CrossWeather\ViewModels\IGeolocation.cs" Line="1" Column="1" />
-      <File FileName="CrossWeather\CrossWeather\ViewModels\Settings.cs" Line="17" Column="3" />
-      <File FileName="CrossWeather\CrossWeather\Views\SettingsPage.xaml" Line="22" Column="15" />
-      <File FileName="CrossWeather\CrossWeather\Views\SettingsPage.xaml.cs" Line="9" Column="35" />
+      <File FileName="CrossWeather.v12.suo" />
+      <File FileName="CrossWeather\CrossWeather\Views\WeatherPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="CrossWeather\CrossWeather\Views\SettingsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="CrossWeather\CrossWeather\Views\ForecastPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="UnitTestProject\UnitTest.cs" Line="1" Column="1" />
+      <File FileName="CrossWeather\CrossWeather.Droid\Properties\AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="WinRTShared\Geolocation_Windows.cs" Line="5" Column="15" />
+      <File FileName="..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" Line="1687" Column="28" />
+      <File FileName="CrossWeather\CrossWeather.Droid\app.config" Line="34" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

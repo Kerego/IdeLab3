@@ -7,16 +7,13 @@ namespace CrossWeather
     {
         public App()
         {
-            // The root page of your application
-            MainPage = new TabbedPage()
-            {
-                Children =
-                {
-                    new WeatherPage(),
-                    new DescriptionPage(),
-                    new SettingsPage()
-                }
-            };
+			MainPage = new TabbedPage () {
+				Children = {
+					new WeatherPage (),
+					new ForecastPage(),
+					new SettingsPage()
+				}
+			};
         }
 
         protected override void OnStart()

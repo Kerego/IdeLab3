@@ -2,7 +2,7 @@
 
 namespace CrossWeather
 {
-    class CommonINotify : INotifyPropertyChanged
+    public class CommonINotify : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

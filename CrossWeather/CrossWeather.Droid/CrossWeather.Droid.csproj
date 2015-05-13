@@ -101,8 +101,6 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Resources\AboutResources.txt" />
-    <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
@@ -110,10 +108,24 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Properties\AndroidManifest.xml" />
-    <Content Include="Properties\_SettingsStarted.txt" />
+    <AndroidResource Include="Resources\drawable\Icon01d.png" />
+    <AndroidResource Include="Resources\drawable\Icon01n.png" />
+    <AndroidResource Include="Resources\drawable\Icon02d.png" />
+    <AndroidResource Include="Resources\drawable\Icon02n.png" />
+    <AndroidResource Include="Resources\drawable\Icon03d.png" />
+    <AndroidResource Include="Resources\drawable\Icon03n.png" />
+    <AndroidResource Include="Resources\drawable\Icon04d.png" />
+    <AndroidResource Include="Resources\drawable\Icon04n.png" />
+    <AndroidResource Include="Resources\drawable\Icon09d.png" />
+    <AndroidResource Include="Resources\drawable\Icon09n.png" />
+    <AndroidResource Include="Resources\drawable\Icon10d.png" />
+    <AndroidResource Include="Resources\drawable\Icon10n.png" />
+    <AndroidResource Include="Resources\drawable\Icon11d.png" />
+    <AndroidResource Include="Resources\drawable\Icon11n.png" />
+    <AndroidResource Include="Resources\drawable\Icon13d.png" />
+    <AndroidResource Include="Resources\drawable\Icon13n.png" />
+    <AndroidResource Include="Resources\drawable\Icon50d.png" />
+    <AndroidResource Include="Resources\drawable\Icon50n.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CrossWeather\CrossWeather.csproj">
@@ -140,5 +152,9 @@
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
 </Project>
